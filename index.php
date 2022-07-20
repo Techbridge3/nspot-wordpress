@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: nPspot wordpress
+ * Plugin Name: nSpot wordpress
  * Description: plugin for show nSpot banner
  * Version: 0.0.2
  * Author: Techbridge
