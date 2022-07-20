@@ -76,7 +76,7 @@ class BannerController
 
         ?>
         <script>
-            jQuery(document).ready(() => {
+            document.addEventListener("DOMContentLoaded", () => {
                 const contract = new window.NFTBannerContract(
                     '<?php echo $callerPrivateKey;?>',
                     '<?php echo $callerAccountName;?>',

@@ -11,7 +11,7 @@ class Config
     /**
      * Plugin name
      */
-    const PLUGIN_NAME = 'TBNFTBanner';
+    const PLUGIN_NAME = 'nspot-wordpress';
 
     /**
      *  Views directory const

@@ -13,10 +13,10 @@ class ShortcodeCreator
     }
 
 
-    public function bannerZone($atts): void
+    public function bannerZone($atts)
     {
         $bannerZone = isset($atts['bannerzone']) ? Data::clearString($atts['bannerzone']) : 'none';
-        echo "<div id='{$bannerZone}'></div>";
+        return "<div id='{$bannerZone}'></div>";
 
     }
 
