@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name: TBNFTBanner
- * Description: plugin for show nft banner
+ * Plugin Name: nPspot wordpress
+ * Description: plugin for show nSpot banner
  * Version: 0.0.2
  * Author: Techbridge
  * Author URI: https://techbridge.ca/
