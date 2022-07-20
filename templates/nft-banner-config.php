@@ -11,7 +11,7 @@
     ?>
 
     <div class="form">
-        <h1><?php _e('NFT Banner configuration', 'TBNFTBanner'); ?></h1>
+        <h1><?php _e('nSpot Banner configuration', 'TBNFTBanner'); ?></h1>
         <form method="post" action="options.php" class="settings-form">
             <?php settings_fields($args->optionsGroup); ?>
 
