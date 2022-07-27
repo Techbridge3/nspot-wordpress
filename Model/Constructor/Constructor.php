@@ -109,8 +109,16 @@ class Constructor
         add_action('admin_init', [&$this, 'addAdminStuffs']);
         add_action('init', [&$this, 'addFrontendStuffs']);
         add_action('init', [&$this, 'addScripts']);
+        add_action('wp_head', [&$this, 'addVariables']);
+
     }
 
+    public function addVariables()
+    {
+        ?>
+            <script>window.ajaxurl = '<?php echo site_url() .'/wp-admin/admin-ajax.php'?>';</script>
+        <?php
+    }
 
     public function setPageTemplates()
     {
