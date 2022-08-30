@@ -57,7 +57,7 @@ class View
     {
 
         $templatePath = self::getConfig()->getTemplatesPath()
-            . '/frontend/template-parts/'
+            . '/template-parts/'
             . $templateName;
         try {
             $error = __('');

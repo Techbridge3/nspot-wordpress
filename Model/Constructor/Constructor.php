@@ -3,6 +3,7 @@
 namespace TBNFTBanner\Model\Constructor;
 
 use TBNFTBanner\Controllers\BannerController;
+use TBNFTBanner\Controllers\ExportController;
 use TBNFTBanner\Controllers\ShortcodeCreator;
 use TBNFTBanner\Model\Config;
 use TBNFTBanner\Controllers\PageConstructor;
@@ -98,6 +99,11 @@ class Constructor
         new BannerController();
         new ShortcodeCreator();
     }
+    public function addAdminStuffs()
+    {
+        new ExportController($this->config);
+    }
+
 
     /**
      * Method to setup WP actions.

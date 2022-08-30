@@ -56,6 +56,18 @@ $defaultUrl = site_url('/wp-admin/admin.php?page=nSpot_banner_statistic');
     ?>
     <div>
         <?php if (!empty($list)): ?>
+            <div>
+                <span>total: <?php echo $count;?></span>
+                <?php echo View::renderParts('export_button.php', [
+                    'buttonName' => 'Export',
+                    'buttonID' => 'banners_export',
+                    'action' => 'exportBannerStatistic',
+                    'step' => 0,
+                    'offset' => 30,
+                    'id' => $bannerId,
+                    'totalRows' => $count,
+                ]);?>
+            </div>
             <table class="blueTable" style="width: 100%;">
                 <tr>
                     <th>

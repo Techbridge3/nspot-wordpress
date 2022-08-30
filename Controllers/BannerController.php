@@ -65,23 +65,16 @@ class BannerController
     public function addBannerScript()
     {
         $options = apply_filters('getNFTBannerConfigOptions', 'options');
-        $contractID = $options['contractID'] ?? '';
-        $callerPrivateKey = $options['callerPrivateKey'] ?? '';
-        $callerAccountName = $options['callerAccountName'] ?? '';
         $bannerZoneId1 = $options['banner_zone_id_1'] ?? '';
         $env = $options['env'] ?? 'testnet';
-        if (!$contractID || !$callerPrivateKey || !$env) {
+        if (!$env) {
             return false;
         }
-
         ?>
         <script>
             document.addEventListener("DOMContentLoaded", () => {
                 const contract = new window.NFTBannerContract(
-                    '<?php echo $callerPrivateKey;?>',
-                    '<?php echo $callerAccountName;?>',
                     '<?php echo $env;?>',
-                    '<?php echo $contractID;?>',
                     '<?php echo $bannerZoneId1;?>',
                 );
                 contract.init();
